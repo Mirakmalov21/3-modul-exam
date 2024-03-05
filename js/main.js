@@ -64,14 +64,14 @@ function render() {
     const template = `
     <div class="order">
         <h1>Order ${booking.id + 1}</h1>
-        <h2>${booking.fullname}</h2>
-        <h2>${booking.phone}</h2>
-        <h2>${booking.address}</h2>
+        <h2>Fullname: ${booking.fullname}</h2>
+        <h2>Phone Number: ${booking.phone}</h2>
+        <h2>Client Addres: ${booking.address}</h2>
 
-        <h3>${booking.carModel}</h3>
-        <h3>${booking.carColor}</h3>
+        <h3>Car Model: ${booking.carModel}</h3>
+        <h3>Color: ${booking.carColor}</h3>
 
-        <h4>${booking.fuel}</h4>
+        <h4>Fuel Type: ${booking.fuel}</h4>
         <h1>Total: $${booking.total}</h1>
         </div>
     `;
