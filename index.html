@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootsrap.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Mirakmalov</title>
+  </head>
+  <body>
+    <form onsubmit="return submitForm(event)">
+      <h1>Rent Car</h1>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Fullname"
+        id="fullname"
+        required
+      />
+      <input
+        class="form-control"
+        type="number"
+        placeholder="Phone Number"
+        id="phone"
+        required
+      />
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Address"
+        id="address"
+        required
+      />
+
+      <select name="model" id="carModel">
+        <option selected>Select Car Model</option>
+        <option value="Mercedes">Mercedes - 560$</option>
+        <option value="BMW">BMW - 430$</option>
+        <option value="Tesla">Tesla - 600$</option>
+      </select>
+
+      <div class="selectColor">
+        <label for="black">
+          <input type="radio" name="carColor" id="black" value="Black" />
+          Black
+        </label>
+        <label for="white">
+          <input type="radio" name="carColor" id="white" value="White" />
+          White
+        </label>
+        <label for="yellow">
+          <input type="radio" name="carColor" id="yellow" value="Yellow" />
+          Yellow
+        </label>
+      </div>
+
+      <div class="fuelType">
+        <label for="benzin">
+          <input type="checkbox" name="fuelType" id="benzin" value="Benzin" />
+          Benzin
+        </label>
+        <label for="metan">
+          <input type="checkbox" name="fuelType" id="metan" value="Metan" />
+          Metan
+        </label>
+        <label for="dizel">
+          <input type="checkbox" name="fuelType" id="dizel" value="Dizel" />
+          Dizel
+        </label>
+        <label for="propan">
+          <input type="checkbox" name="fuelType" id="propan" value="Propan" />
+          Propan
+        </label>
+      </div>
+
+      <div class="buttons">
+        <button class="btn btn-primary">Book</button>
+        <button class="btn btn-danger" type="reset">Reset</button>
+      </div>
+    </form>
+    <div id="orderList">
+
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
